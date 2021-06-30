@@ -18,7 +18,7 @@ compute_url = "https://www.googleapis.com/compute/v1/projects/"
 zones = compute.zones().list(project=project).execute()
 our_zones = []
 for zone in zones['items']:
-    if "us-central1" in zone['region']:
+    if region in zone['region']:
         our_zones.append(zone['name'])
 
 print("Live instances:")

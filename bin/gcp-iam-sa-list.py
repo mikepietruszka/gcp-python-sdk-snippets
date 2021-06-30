@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 '''
 ..moduleauthor:: Mike Pietruszka <mike@mpietruszka.com>
-..summary:: Set project name as your sys.argv[1] CLI argument
+..summary:: Display IAM roles and Service Account details
+..note::
+    - sys.argv[1]: GCP Project ID
 '''
 
 import googleapiclient.discovery
